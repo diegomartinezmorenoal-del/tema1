@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><title>Socios</title></head>
+<body>
+    <h1>Lista de Socios</h1>
+    <ul>
+    {% for socio in socios %}
+        <li>
+            <strong>Nombre:</strong> {{ socio.nombre }} |
+            <strong>Email:</strong> {{ socio.email }} |
+            <strong>Fecha Alta:</strong> {{ socio.fecha_alta }}
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
